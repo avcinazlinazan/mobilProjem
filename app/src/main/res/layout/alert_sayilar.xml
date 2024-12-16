@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="11-Onze-onz\n12-Douze [duz]\n13-Treize [tğez]\n14-Quatorze\n[katoğz]\n15-Quinze [kenz]\n16-Seize [sez]\n17-Dix-sept\n [diset]\n18-Dix-huit [disvit]\n19-Dix-neuf\n [disnöf]"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="8dp"
+        android:text="1000000    un million  [an milyon]\n 10000000000   un milliard[an milyar]"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="20-Vingt[van]\n 21-Vingt et un\n[vantean]\n22-Vingt-deux\n30-Trente[tğant] \n 31-Trente et un\n40-Quarante[Qağant]\n50-Cinquante\n[Senkant] \n60-Soixante\n[suasant] \n 70-  Soixante-dix \n 71-soixante-onze \n 72-soixante-douze \n 80-Quatre-vingts\n81-Quatre-vingt-un \n90-Quatre-vingt-dix\n100-cent[san] \n101cent un[san an] \n 10000 Mille[mil] \n1001 Mille un "
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1 - Un/Une\n[an/ün] \n 2- Deux [dö]\n 3 Trois [tğua]\n 4-Quatre [katğ]\n 5- Cinq [senk]\n 6- Six [sis]\n 7-  Sept [set]\n 8-Huit [vit]\n 9- Neuf [nöf] \n 10- Dix [dis]"
+        android:textColor="@color/colorButtonRed"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

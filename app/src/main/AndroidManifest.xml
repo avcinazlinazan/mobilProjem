@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kelimedata">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KelimeData">
+        <activity android:name=".Quiz2ctivity"></activity>
+        <activity android:name=".QuizEkleActivity" />
+        <activity
+            android:name=".ButonKelimeEsleActivity2"
+            android:theme="@style/KelimeFullTheme" />
+        <activity android:name=".ButonEslemeActivity" />
+        <activity android:name=".EslestirmeOyunuActivity" />
+        <activity android:name=".KelimeOgrenActivity" />
+        <activity
+            android:name=".DuzenleKelimeActivity"
+            android:theme="@style/KelimeTheme" />
+        <activity android:name=".SozlukActivity2" />
+        <activity android:name=".EkleKelimeActivity" />
+        <activity android:name=".AyrintiActivity" />
+        <activity android:name=".KelimeyeCumleActivity" />
+        <activity android:name=".SozlukActivity" />
+        <activity android:name=".UyeOlActivity" />
+        <activity
+            android:name=".AlistirmaActivity"
+            android:theme="@style/KelimeFullTheme" />
+        <activity android:name=".GenelActivity" />
+        <activity
+            android:name=".ContentActivity"
+            android:theme="@style/KelimeFullTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/KelimeFullTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".CumleEkleActivity"
+            android:theme="@style/KelimeFullTheme" />
+        <activity
+            android:name=".KelimeEslemeActivity"
+            android:theme="@style/KelimeFullTheme" />
+        <activity android:name=".KelimeEkleActivity" />
+        <activity
+            android:name=".DetayActivity"
+            android:theme="@style/KelimeTheme" />
+        <activity
+            android:name=".VerilerActivity"
+            android:theme="@style/KelimeFullTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

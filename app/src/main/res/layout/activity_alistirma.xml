@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background"
+    android:orientation="vertical"
+    tools:context=".AlistirmaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSoru"
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"
+            android:layout_marginBottom="3dp"
+            android:padding="5dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="2dp"
+
+            app:cardPreventCornerOverlap="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/mor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewCan"
+                    app:layout_constraintStart_toEndOf="@+id/imageButtonCik"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.323" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonCik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_baseline_close_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.041"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewCan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="+1"
+                    android:textColor="@color/purple_200"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButtonHeart"
+                    app:layout_constraintStart_toEndOf="@+id/progressBar4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonHeart"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/heart_round"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSoruTurkce"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_marginBottom="3dp"
+            android:background="@color/yesil"
+
+            android:padding="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewSoruF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Cümleyi çevirin"
+                    android:textColor="@color/purple_200"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSoruSayi" />
+
+                <TextView
+                    android:id="@+id/textViewSoruSayi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="-4dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSoruAlani"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+
+            android:padding="5dp"
+            app:cardBackgroundColor="#E7FBF7"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewKelimeAlani"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            app:cardCornerRadius="10dp"
+
+            app:cardElevation="8dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+
+
+                >
+
+                <Button
+                    android:id="@+id/btnIsim1"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/yellow"
+                    android:onClick="clickAc"
+
+                    android:text="İsim"
+                    android:textColor="@color/purple_200"
+                    app:backgroundTint="@color/yellow"
+                    app:layout_constraintBottom_toTopOf="@+id/btnFiil2"
+                    app:layout_constraintEnd_toStartOf="@+id/btnIsim2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnIsim2"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/yellow"
+                    android:onClick="clickAc"
+                    android:text="İsim"
+
+                    android:textColor="@color/purple_200"
+                    app:backgroundTint="@color/yellow"
+                    app:layout_constraintBottom_toTopOf="@+id/btnFiil3"
+                    app:layout_constraintEnd_toStartOf="@+id/btnIsim3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnIsim1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnIsim3"
+
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/mor"
+
+                    android:onClick="clickAc"
+                    android:text="İsim2"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/yellow"
+                    app:layout_constraintBottom_toTopOf="@+id/btnSifat1"
+                    app:layout_constraintEnd_toStartOf="@+id/btnFiil1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnIsim2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnFiil1"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/turuncu"
+                    android:onClick="clickAc"
+                    android:text="Fiil1"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/turuncu"
+                    app:layout_constraintBottom_toTopOf="@+id/btnSifat2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnIsim3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnFiil2"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/turuncu"
+                    android:onClick="clickAc"
+
+
+                    android:text="Fiil2"
+
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/turuncu"
+                    app:layout_constraintBottom_toTopOf="@+id/btnArticle2"
+                    app:layout_constraintEnd_toStartOf="@+id/btnFiil3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnIsim1" />
+
+                <Button
+                    android:id="@+id/btnFiil3"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/turuncu"
+                    android:onClick="clickAc"
+
+                    android:text="Fiil2"
+
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/turuncu"
+                    app:layout_constraintBottom_toTopOf="@+id/btnZamir1"
+                    app:layout_constraintEnd_toStartOf="@+id/btnSifat1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnFiil2"
+                    app:layout_constraintTop_toBottomOf="@+id/btnIsim2" />
+
+                <Button
+                    android:id="@+id/btnSifat1"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/mavi"
+
+                    android:onClick="clickAc"
+                    android:text="sıfat1"
+
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/mavi"
+                    app:layout_constraintBottom_toTopOf="@+id/btnZamir2"
+                    app:layout_constraintEnd_toStartOf="@+id/btnSifat2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnFiil3"
+                    app:layout_constraintTop_toBottomOf="@+id/btnIsim3" />
+
+                <Button
+                    android:id="@+id/btnSifat2"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/mavi"
+
+                    android:onClick="clickAc"
+                    android:text="sıfat2"
+
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/mavi"
+                    app:layout_constraintBottom_toTopOf="@+id/btnArticle1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnSifat1"
+                    app:layout_constraintTop_toBottomOf="@+id/btnFiil1" />
+
+                <Button
+                    android:id="@+id/btnArticle2"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/acikYesil"
+                    android:onClick="clickAc"
+
+                    android:text="article2"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/acikYesil"
+                    app:layout_constraintBottom_toTopOf="@+id/btnZarf1"
+                    app:layout_constraintEnd_toStartOf="@+id/btnZamir1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnFiil2" />
+
+                <Button
+                    android:id="@+id/btnZamir1"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/pembe"
+                    android:onClick="clickAc"
+                    android:text="zamir1"
+
+                    android:textColor="@color/purple_200"
+                    app:backgroundTint="@color/pembe"
+                    app:layout_constraintBottom_toTopOf="@+id/btnZarf2"
+                    app:layout_constraintEnd_toStartOf="@+id/btnZamir2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnArticle2"
+                    app:layout_constraintTop_toBottomOf="@+id/btnFiil3" />
+
+                <Button
+                    android:id="@+id/btnZamir2"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/pembe"
+                    android:onClick="clickAc"
+                    android:text="zamir2"
+
+                    android:textColor="@color/purple_200"
+                    app:backgroundTint="@color/pembe"
+                    app:layout_constraintBottom_toTopOf="@+id/btnIsim4"
+                    app:layout_constraintEnd_toStartOf="@+id/btnArticle1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnZamir1"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSifat1" />
+
+                <Button
+                    android:id="@+id/btnArticle1"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/acikYesil"
+
+                    android:onClick="clickAc"
+                    android:text="article1"
+
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/acikYesil"
+                    app:layout_constraintBottom_toTopOf="@+id/btnArticle3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnZamir2"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSifat2" />
+
+                <Button
+                    android:id="@+id/btnZarf1"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+
+
+                    android:layout_marginTop="8dp"
+                    android:background="@color/kirmizi"
+
+
+                    android:onClick="clickAc"
+                    android:text="zarf1"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/kirmizi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnZarf2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnArticle2" />
+
+                <Button
+                    android:id="@+id/btnZarf2"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/kirmizi"
+
+
+                    android:onClick="clickAc"
+                    android:text="zarf2"
+
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/kirmizi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnIsim4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnZarf1"
+                    app:layout_constraintTop_toBottomOf="@+id/btnZamir1" />
+
+                <Button
+                    android:id="@+id/btnIsim4"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/mor"
+                    android:onClick="clickAc"
+
+
+                    android:text="isim4"
+
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/yellow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnArticle3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnZarf2"
+                    app:layout_constraintTop_toBottomOf="@+id/btnZamir2" />
+
+                <Button
+                    android:id="@+id/btnArticle3"
+                    style="@style/colorstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/acikYesil"
+
+
+                    android:onClick="clickAc"
+                    android:text="article3"
+
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/acikYesil"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnIsim4"
+                    app:layout_constraintTop_toBottomOf="@+id/btnArticle1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginRight="100dp"
+                tools:layout_editor_absoluteX="227dp"
+                tools:layout_editor_absoluteY="-150dp">
+
+                <Button
+                    android:id="@+id/btnOnay"
+                    style="@style/colorstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@color/light_blue_A200"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/mavi" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#E044AE</color>
+    <color name="purple_700">#F888AE</color>
+    <color name="teal_200">#8DE3DA</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yesil">#A2FBF1</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="mavi">#03A9F4</color>
+    <color name="mor">#E2D4FA</color>
+    <color name="turuncu">#FB8A65</color>
+    <color name="pembe">#FF8DD6</color>
+    <color name="acikYesil">#CCFF90</color>
+    <color name="kirmizi">#F3073E</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#D5690B</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="kahverengi">#D5690B</color>
+
+    <color name="colorButton">#F5F5F5</color>
+    <color name="colorButtonSelect">#E0E0E0</color>
+    <color name="colorButtonRed">#FF1744</color>
+    <color name="colorButtonBlue">#18FFFF</color>
+    <color name="colorPrimary">#c82e48</color>
+    <color name="colorPrimaryDark">#1d1d27</color>
+    <color name="colorAccent">#c82e48</color>
+
+</resources>

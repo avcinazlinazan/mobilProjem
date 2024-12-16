@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kayit_ol_arka"
+    tools:context=".ContentActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonCik3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_baseline_close_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnKelimeOgren2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gonder2"
+        android:onClick="Onclick"
+        android:text="KELİME ÖĞREN"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlistirma"
+        app:layout_constraintStart_toStartOf="@+id/btnAlistirma"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlistirma" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDurum2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:max="100"
+        android:min="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/apprends_toujours"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarDurum2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnKonu"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/gonder2"
+        android:onClick="Onclick"
+        android:text="Konular"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAlistirma"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gonder"
+        android:onClick="Onclick"
+        android:text="Alıştırma yap"
+        android:textColor="@color/kirmizi"
+        app:layout_constraintEnd_toEndOf="@+id/btnKonu"
+        app:layout_constraintStart_toStartOf="@+id/btnKonu"
+        app:layout_constraintTop_toBottomOf="@+id/btnKonu" />
+
+    <Button
+        android:id="@+id/btnKelimeOgren"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gonder"
+        android:onClick="Onclick"
+        android:text="RESİMLE KELİME ÖĞREN"
+        android:textColor="@color/colorButtonRed"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlistirma"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAlistirma"
+        app:layout_constraintTop_toBottomOf="@+id/btnKelimeOgren2" />
+
+    <Button
+        android:id="@+id/btnSozluk"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gonder2"
+        android:onClick="Onclick"
+        android:text="Sözlük"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/btnKelimeOgren"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnKelimeOgren"
+        app:layout_constraintTop_toBottomOf="@+id/btnKelimeOgren" />
+
+    <Button
+        android:id="@+id/btnKelimeEs"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gonder2"
+        android:onClick="Onclick"
+        android:text="KELİME EŞLEŞTİRME OYUNU"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/btnKelimeOgren"
+        app:layout_constraintStart_toStartOf="@+id/btnCumle"
+        app:layout_constraintTop_toBottomOf="@+id/btnCumle" />
+
+    <Button
+        android:id="@+id/btnKelimeRenkEs"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gonder2"
+        android:onClick="Onclick"
+        android:text="RENK EŞLEŞTİRME "
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/btnKelimeOgren"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCumle"
+        app:layout_constraintTop_toBottomOf="@+id/btnKelimeResimEs" />
+
+    <Button
+        android:id="@+id/btnCumle"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gonder"
+        android:onClick="Onclick"
+        android:text="Kelime Tahmin Oyunu"
+        android:textColor="@color/kirmizi"
+        app:layout_constraintEnd_toEndOf="@+id/btnKelimeOgren"
+        app:layout_constraintStart_toStartOf="@+id/btnSozluk"
+        app:layout_constraintTop_toBottomOf="@+id/btnSozluk" />
+
+    <Button
+        android:id="@+id/btnKelimeResimEs"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gonder"
+        android:onClick="Onclick"
+        android:text="RESİM KELİME EŞLEME"
+        android:textColor="@color/kirmizi"
+        app:layout_constraintEnd_toEndOf="@+id/btnKelimeOgren"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSozluk"
+        app:layout_constraintTop_toBottomOf="@+id/btnKelimeEs" />
+
+    <TextView
+        android:id="@+id/textViewAdi"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bos_kutu"
+        android:padding="5dp"
+        android:text="naz"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

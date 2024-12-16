@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/renkler"
+    android:icon="@drawable/ic_renkler"
+    app:showAsAction="always"
+    android:title="Renkler"/>
+    <item android:id="@+id/sayilar"
+        android:icon="@drawable/ic_sayim"
+        app:showAsAction="always"
+        android:title="Renkler"/>
+
+    <item
+        android:id="@+id/alfabe"
+        android:icon="@drawable/alfabem"
+        android:title="Alfabe"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/kapat"
+        android:icon="@drawable/ic_baseline_close_24"
+        android:title="Kapat"
+        app:showAsAction="always|collapseActionView" />
+
+</menu>

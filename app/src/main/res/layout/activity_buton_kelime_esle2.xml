@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButonKelimeEsleActivity2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textViewYanlis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+
+                android:text="Yanlış : 0"
+                android:textColor="@color/kirmizi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewDogru"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="KELİME EŞLEME OYUNU"
+                android:textColor="@color/purple_500"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewDogru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Doğru : 0"
+                android:textColor="@color/teal_200"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textViewYanlis"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textViewSoruSayisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp"
+                android:text=" 1.Soru"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+            <Button
+                android:id="@+id/btnTurkce1"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="131dp"
+                android:background="@color/yellow"
+                android:shadowColor="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btnTurkce2"
+                app:layout_constraintEnd_toStartOf="@+id/btnFransizca1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnFransizca1"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="131dp"
+                android:background="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btnFransizca2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnTurkce1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnTurkce2"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/yellow"
+                android:shadowColor="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btnTurkce3"
+                app:layout_constraintEnd_toStartOf="@+id/btnFransizca2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTurkce1" />
+
+            <Button
+                android:id="@+id/btnFransizca2"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btnFransizca3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnTurkce2"
+                app:layout_constraintTop_toBottomOf="@+id/btnFransizca1" />
+
+            <Button
+                android:id="@+id/btnTurkce3"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/yellow"
+                android:shadowColor="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btnTurkce4"
+                app:layout_constraintEnd_toStartOf="@+id/btnFransizca3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTurkce2" />
+
+            <Button
+                android:id="@+id/btnFransizca3"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btnFransizca4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnTurkce3"
+                app:layout_constraintTop_toBottomOf="@+id/btnFransizca2" />
+
+            <Button
+                android:id="@+id/btnTurkce4"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/yellow"
+                android:shadowColor="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btnTurkce5"
+                app:layout_constraintEnd_toStartOf="@+id/btnFransizca4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTurkce3" />
+
+            <Button
+                android:id="@+id/btnFransizca4"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btnFransizca5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnTurkce4"
+                app:layout_constraintTop_toBottomOf="@+id/btnFransizca3" />
+
+            <Button
+                android:id="@+id/btnTurkce5"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="213dp"
+                android:background="@color/yellow"
+                android:shadowColor="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnFransizca5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTurkce4" />
+
+            <Button
+                android:id="@+id/btnFransizca5"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="214dp"
+                android:background="@color/acikYesil"
+                android:text="Button"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnTurkce5"
+                app:layout_constraintTop_toBottomOf="@+id/btnFransizca4" />
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Süre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
